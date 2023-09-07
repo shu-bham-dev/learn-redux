@@ -9,10 +9,10 @@ const cartSlice = createSlice({
     addItem: (state, action) => {
       state.items.push(action.payload);
     },
-    removeItem: () => {
+    removeItem: (state) => {
       state.items.pop();
     },
-    clearCart: () => {
+    clearCart: (state) => {
       state.items = [];
     },
   },
