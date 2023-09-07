@@ -1,7 +1,11 @@
 import React from "react";
+import AddCart from "../AddCart";
 
 const Home = () => {
-  return <div>Home</div>;
+  return <div>
+    Number of click - 
+    <AddCart/>
+  </div>;
 };
 
 export default Home;
